@@ -20,25 +20,27 @@
         <legend>login form</legend>
         <div class="user-email">
           <label for="userEmail">id</label>
-          <input type="email" id="userEmail" placeholder="id(email)" required="required" />
+          <input name="userEmail" type="email" id="userEmail" placeholder="id(email)" required="required" />
         </div>
         <div class="user-password">
           <label for="userPassword">password</label>
-          <input type="password" id="userPassword" placeholder="password" required="required" />
+          <input name="userPassword" type="password" id="userPassword" placeholder="password" required="required" />
         </div>
         <div class="ip-state-wrapper">
             <div class="login-state">
-                <input type="checkbox" id="loginState">
+                <input name="state" type="checkbox" id="loginState">
                 <label for="loginState">
                     <span class="icon-check"></span>
                     로그인 상태유지
                 </label>
             </div>
             <div class="login-ip">
-                <input type="checkbox" id="loginIp">
+                <input name="ip" type="checkbox" id="loginIp">
                 <label for="loginIp">IP 보안</label>
             </div>
         </div>
+        <button type="submit" class="btn-login" required="required">login</button>
+
       </fieldset>
     </form>
   </body>
