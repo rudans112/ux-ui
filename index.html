@@ -19,28 +19,31 @@
       method="POST">
       <fieldset>
         <legend class="a11y">login form</legend>
-        <div class="user-email">
-          <label for="userEmail" class="a11y">id</label>
-          <input name="userEmail" type="email" id="userEmail" placeholder="id(email)" required="required" />
+        <div class="container">
+
+          <div class="user-email">
+            <label for="userEmail" class="a11y">id</label>
+            <input name="userEmail" type="email" id="userEmail" placeholder="id(email)" required="required" />
+          </div>
+          <div class="user-password">
+            <label for="userPassword" class="a11y">password</label>
+            <input name="userPassword" type="password" id="userPassword" placeholder="password" required="required" />
+          </div>
+          <div class="ip-state-wrapper">
+              <div class="login-state">
+                  <input name="state" type="checkbox" id="loginState">
+                  <label for="loginState">
+                      <span class="icon-check"></span>
+                      로그인 상태유지
+                  </label>
+              </div>
+              <div class="login-ip">
+                  <input name="ip" type="checkbox" id="loginIp">
+                  <label for="loginIp">IP 보안</label>
+              </div>
+          </div>
+          <button type="submit" class="btn-login" required="required">login</button>
         </div>
-        <div class="user-password">
-          <label for="userPassword" class="a11y">password</label>
-          <input name="userPassword" type="password" id="userPassword" placeholder="password" required="required" />
-        </div>
-        <div class="ip-state-wrapper">
-            <div class="login-state">
-                <input name="state" type="checkbox" id="loginState">
-                <label for="loginState">
-                    <span class="icon-check"></span>
-                    로그인 상태유지
-                </label>
-            </div>
-            <div class="login-ip">
-                <input name="ip" type="checkbox" id="loginIp">
-                <label for="loginIp">IP 보안</label>
-            </div>
-        </div>
-        <button type="submit" class="btn-login" required="required">login</button>
 
       </fieldset>
     </form>
