@@ -1,5 +1,17 @@
 
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+/* 숨김 콘텐츠 */
+.a11y{
+    position: absolute;   
+    width: 1px; 
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    visibility: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+}
+
 /* 본문 기본 스타일 */
 body{
     font-family: 'Spoqa Han Sans';
@@ -8,6 +20,7 @@ body{
     color: #181818;
     margin: 0;
 }
+
 /* 네이버 로고 */
 .logo{
     width: 230px;
@@ -21,21 +34,34 @@ body{
     max-width: 100%;
     height: auto;
 }
+
 /* 로그인 폼 */
 .login-form fieldset{
 border: 0;
 margin: 0;
 padding: 0;
 background-color: pink;
+width: 460px;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-flow: row wrap;
 }
-/* 레전드 숨기기 트릭 */
-.login-form legend{
-    position: absolute;   
-    width: 1px; 
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    visibility: hidden;
-    clip: rect(0 0 0 0);
-    clip-path: polygon(0 0, 0 0, 0 0);
+.user-email,
+.user-password,
+.ip-state-wrapper,
+.btn-login{
+    width: 100%;
+}
+.ip-state-wrapper{
+    order: 1;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+[name="userEmail"],
+[name="userPassword"]{
+    width: 100%;
+    box-sizing: border-box;
 }
